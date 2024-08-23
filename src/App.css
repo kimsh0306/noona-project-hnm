@@ -1,4 +1,51 @@
 /* main page */
+
+body {
+  position: relative;
+}
+
+/*  */
+.side-menu-top {
+  position: absolute;
+  padding: 20px;
+}
+
+.side-menu-area {
+  width: 150px;
+  padding: 20px;
+  height: 100vh;
+  overflow: hidden;
+  text-wrap: nowrap;
+  background-color: #000000;
+  position: absolute;
+  z-index: 1;
+  left: -150px;
+  transition: left 400ms;
+}
+
+.side-menu-area.open {
+  left: 0px;
+}
+
+.side-menu-close {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.side-menu-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-menu-list li {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+/*  */
 .nav-container {
   padding: 20px;
 }
@@ -257,6 +304,7 @@
   justify-content: flex-start;
   align-items: center;
 }
+
 .detail-info p {
   margin: 0 0 0 5px;
   font-size: 14px;
