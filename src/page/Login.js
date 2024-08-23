@@ -21,7 +21,7 @@ const Login = ({ setAuthenticate }) => {
           <label htmlFor="login-id">아이디</label>
           <input type="text" id="login-id"></input>
           <label htmlFor="login-pw">비밀번호</label>
-          <input type="password" id="login-pw"></input>
+          <input type="password" id="login-pw" autoComplete='on'></input>
           <button type='submit'>로그인</button>
         </form>
       </div>
