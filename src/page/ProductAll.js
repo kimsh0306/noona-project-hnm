@@ -11,8 +11,8 @@ const ProductAll = () => {
   const getProducts = async () => {
     let searchQuery = query.get("q") || "";
     console.log("searchQuery: ", searchQuery)
-    let url = `http://localhost:4000/products?q=${searchQuery}`;
-    // let url = `https://my-json-server.typicode.com/<kimsh0306>/<noona-project-hnm>/products?q=${searchQuery}`;
+    // let url = `http://localhost:4000/products?q=${searchQuery}`;
+    let url = `https://my-json-server.typicode.com/<kimsh0306>/<noona-project-hnm>/products?q=${searchQuery}`;
     let response = await fetch(url);
     let data = await response.json();
     setProductList(data);

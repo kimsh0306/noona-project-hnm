@@ -10,8 +10,8 @@ const ProductDetail = () => {
   let { id } = useParams();
 
   const getProductDetail = async () => {
-    let url = `http://localhost:4000/products/${id}`;
-    // let url = `https://my-json-server.typicode.com/<kimsh0306>/<noona-project-hnm>/products/${id}`;
+    // let url = `http://localhost:4000/products/${id}`;
+    let url = `https://my-json-server.typicode.com/<kimsh0306>/<noona-project-hnm>/products/${id}`;
     let response = await fetch(url);
     let data = await response.json();
     console.log(data);
